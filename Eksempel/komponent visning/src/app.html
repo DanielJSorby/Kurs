@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap"
+		/>
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=dress-code@400,500,600&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--color-bg-0: #1d1e23;
+				--color-bg-1: #25262b;
+				--color-bg-2: #2d2e33;
+				--color-theme-1: #ff3e00;
+				--color-theme-2: #ff5c2b;
+				--color-text-1: #fdffff;
+				--color-text-2: #8d8d94;
+				--color-theme-1-rgb: 255, 62, 0;
+
+				--font-heading: "Dress Code", serif;
+				--font-body: "EB Garamond", serif;
+				--font-code: "Fira Code", monospace;
+			}
+
+			body {
+				margin: 0;
+				background-color: var(--color-bg-0);
+				color: var(--color-text-1);
+				font-family: var(--font-body);
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: var(--font-heading);
+				font-weight: 500;
+			}
+
+			code {
+				font-family: var(--font-code);
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
