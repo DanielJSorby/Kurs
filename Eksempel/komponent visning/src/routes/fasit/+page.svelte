@@ -2,7 +2,6 @@
     import Button from '$lib/components/Button.svelte';
     import Card from '$lib/components/Card.svelte';
     import Input from '$lib/components/Input.svelte';
-    import { goto } from '$app/navigation';
     
     function goBack() {
         history.back();
@@ -14,7 +13,7 @@
         <h1>Komponent Fasit</h1>
         <p>Her er en oversikt over komponentene vi brukte i MinSkole-siden</p>
         <div class="nav-buttons">
-            <Button variant="ghost" on:click={() => goto('/')}>← Tilbake til hovedsiden</Button>
+            <a href="/"><Button variant="ghost">← Tilbake til hovedsiden</Button></a>
         </div>
     </header>
 
