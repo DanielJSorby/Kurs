@@ -1,0 +1,42 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/dress-code");
+@import url("https://cdn.jsdelivr.net/npm/fira-code@6.2.0/distr/fira_code.css");
+
+/* CSS Variables from styleguide */
+:root {
+	--color-bg-0: #1d1e23;
+	--color-bg-1: #25262b;
+	--color-bg-2: #2d2e33;
+	--color-theme-1: #ff3e00;
+	--color-theme-2: #ff5c2b;
+	--color-text-1: #fdffff;
+	--color-text-2: #8d8d94;
+	--font-heading: "Dress Code", serif;
+	--font-body: "EB Garamond", serif;
+	--font-code: "Fira Code", monospace;
+	--border-radius: 26px;
+}
+
+/* Base font settings */
+body {
+	font-family: var(--font-body);
+	color: var(--color-text-1);
+	background-color: var(--color-bg-0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label {
+	font-family: var(--font-heading);
+}
+
+code,
+pre {
+	font-family: var(--font-code);
+}
