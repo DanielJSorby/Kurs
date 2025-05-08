@@ -1,20 +1,22 @@
 <script>
-    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; /* color liste */
     let selected = colors[0]; // Endret fra $state til vanlig variabel
 </script>
 <main>
-    <h1>Each</h1>
+    <h1>Each</h1> 
     <h2 style="color: {selected}">Pick a colour</h2>
 
     <div>
-        {#each colors as color, i}
+        {#each colors as color, i} 
+    <!-- går gjennom hver farge i colors-lista og kall hver farge for color og i er nummeret 
+         på fargen i lista som 0, 1, 2 -->
             <button
                 style="background: {color}"
                 aria-label={color}
                 aria-current={selected === color}
                 on:click={() => (selected = color)}
             >
-                {i + 1}
+                {i + 1} <!--dette betyr ta nummeret i og legg til 1 -->
             </button>
         {/each}
     </div>

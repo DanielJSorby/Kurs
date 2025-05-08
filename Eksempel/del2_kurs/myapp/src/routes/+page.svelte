@@ -67,7 +67,8 @@
             Clicked {count} {count === 1 ? 'time' : 'times'}
         </button>
 
-        {#if count > 10}
+ 
+        {#if count > 10}    /* koden sier vis talet er større enn 10 så viser den teksten under */
             <p>{count} is greater than 10</p>
         {/if}
 
