@@ -58,6 +58,14 @@
     padding: 2rem 0;
   }
 
+  header h1 {
+    color: #FDFFFF;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
   .subtitle {
     color: var(--color-text-2);
     font-size: 1.2rem;
@@ -96,7 +104,7 @@
 
   .component-card h2 {
     margin: 0;
-    color: var(--color-theme-1);
+    color: #FDFFFF;
     font-size: 1.8rem;
   }
 
