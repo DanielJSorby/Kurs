@@ -12,9 +12,9 @@ export const componentCode = {
 
 <style>
   nav {
-    background-color: var(--color-bg-1);
+    background-color: #25262b;
     padding: 1rem 2rem;
-    border-radius: var(--border-radius);
+    border-radius: 26px;
   }
 
   ul {
@@ -27,15 +27,15 @@ export const componentCode = {
 
   a {
     text-decoration: none;
-    color: var(--color-text-1);
-    font-family: var(--font-heading);
+    color: #FDFFFF;
+    font-family: "Dress Code", serif;
     font-weight: 500;
     font-size: 1rem;
     transition: color 0.2s ease;
   }
 
   a:hover {
-    color: var(--color-theme-1);
+    color: #FF3E00;
   }
 </style>`,
 
@@ -58,31 +58,31 @@ export const componentCode = {
   }
 
   label {
-    color: var(--color-text-1);
-    font-family: var(--font-heading);
+    color: #FDFFFF;
+    font-family: "Dress Code", serif;
     font-weight: 500;
     font-size: 1rem;
   }
 
   input {
     padding: 0.75rem 1.5rem;
-    border: 2px solid var(--color-bg-2);
-    border-radius: var(--border-radius);
-    background-color: var(--color-bg-1);
-    color: var(--color-text-1);
-    font-family: var(--font-body);
+    border: 2px solid #2d2e33;
+    border-radius: 26px;
+    background-color: #25262b;
+    color: #FDFFFF;
+    font-family: "EB Garamond", serif;
     font-size: 1.1rem;
     transition: all 0.2s ease;
   }
 
   input:focus {
     outline: none;
-    border-color: var(--color-theme-1);
+    border-color: #FF3E00;
     box-shadow: 0 0 0 2px rgba(255, 62, 0, 0.2);
   }
 
   input::placeholder {
-    color: var(--color-text-2);
+    color: #8D8D94;
   }
 </style>`,
 
@@ -118,7 +118,7 @@ export const componentCode = {
   }
 
   h1 {
-    font-family: var(--font-heading);
+    font-family: "Dress Code", serif;
     font-weight: 600;
     font-size: 3.2rem;
     margin-bottom: 2rem;
@@ -138,7 +138,7 @@ export const componentCode = {
     border: none;
     border-radius: 26px;
     padding: 0.75rem 1.5rem;
-    font-family: var(--font-heading);
+    font-family: "Dress Code", serif;
     font-weight: 500;
     font-size: 1rem;
     cursor: pointer;
@@ -152,7 +152,7 @@ export const componentCode = {
 
   .signup-text {
     color: #8D8D94;
-    font-family: var(--font-body);
+    font-family: "EB Garamond", serif;
     font-size: 1.1rem;
     text-align: center;
   }
@@ -182,7 +182,7 @@ export const componentCode = {
 
 <style>
   :global(body) {
-    background-color: var(--color-bg-1);
+    background-color: #25262b;
   }
 </style>`,
 
