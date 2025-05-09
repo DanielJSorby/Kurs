@@ -1,39 +1,46 @@
-<script lang="ts">
-    let { label, type = 'text', placeholder } = $props();
+<script>
+  export let label = '';
+  export let type = 'text';
+  export let placeholder = '';
 </script>
 
-<label for={label}>{label}</label>
-<input type={type} placeholder={placeholder} />
+<div class="input-container">
+  <label for={label}>{label}</label>
+  <input {type} id={label} {placeholder} />
+</div>
 
 <style>
-    label {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: #FDFFFF;
-        font-family: var(--font-heading);
-        font-weight: 500;
-        font-size: 1rem;
-    }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    input {
-        width: 100%;
-        padding: 0.75rem 1.5rem;
-        border: 2px solid #2d2e33;
-        border-radius: 26px;
-        background-color: #25262b;
-        color: #FDFFFF;
-        font-family: var(--font-body);
-        font-size: 1.1rem;
-        transition: all 0.2s ease;
-    }
+  label {
+    color: var(--color-text-1);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1rem;
+  }
 
-    input:focus {
-        outline: none;
-        border-color: #FF3E00;
-        box-shadow: 0 0 0 2px rgba(255, 62, 0, 0.2);
-    }
+  input {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--color-bg-2);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-1);
+    color: var(--color-text-1);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+  }
 
-    input::placeholder {
-        color: #8D8D94;
-    }
+  input:focus {
+    outline: none;
+    border-color: var(--color-theme-1);
+    box-shadow: 0 0 0 2px rgba(255, 62, 0, 0.2);
+  }
+
+  input::placeholder {
+    color: var(--color-text-2);
+  }
 </style>

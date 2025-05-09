@@ -1,17 +1,17 @@
 <script lang="ts">
-    import '../app.css';
-    
-    interface Props {
-        children?: import('svelte').Snippet;
-    }
-    
-    let { children }: Props = $props();
+  import '../app.css';
+  
+  interface Props {
+    children?: import('svelte').Snippet;
+  }
+  
+  let { children }: Props = $props();
 </script>
 
 {@render children?.()}
 
 <style>
-    :global(body) {
-        background-color: var(--color-bg-1);
-    }
+  :global(body) {
+    background-color: var(--color-bg-1);
+  }
 </style>
